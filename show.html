@@ -1,0 +1,78 @@
+<html>
+<title>jquery</title>
+<head>
+<script src="/home/ukistu04/Documents/uki3/jquery/JQUERY/jquery-3.3.1.js"></script>
+<script src="/home/ukistu04/Documents/uki3/jquery/JQUERY/jquery-3.3.1.min.js"></script>
+<script src="/home/ukistu04/Documents/uki3/jquery/JQUERY/jquery-3.3.1.min.map"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide(2000);
+    });
+    $("#show").click(function(){
+        $("p").show(500);
+    });
+});
+
+
+$(document).ready(function(){
+    $("#tog").click(function(){
+        $("p").toggle(1000);
+    });
+});
+$(document).ready(function(){
+    $("#tup").dblclick(function(){
+        $("p").slideUp(1000);
+    });
+    $("#tdouwn").dblclick(function(){
+        $("p").slideDown(500);
+    });
+});
+
+
+$(document).ready(function(){
+    $("#tslide").dblclick(function(){
+        $("p").slideToggle(1000);
+    });
+});
+$(document).ready(function(){
+$("button").mouseenter(function(){
+       $("#01").fadeIn();
+       $("#02").fadeIn("slow");
+       $("#03").fadeIn(3000);
+    });
+});
+$(document).ready(function(){
+$("#out").mouseenter(function(){
+       $("#01").fadeOut(3000);
+       $("#02").fadeOut("slow");
+       $("#03").fadeOut();
+    });
+});
+$(document).ready(function(){
+$("#toggle").mouseenter(function(){
+       $("#01").fadeToggle();
+       $("#02").fadeToggle("slow");
+       $("#03").fadeToggle(2000);
+    });
+});
+</script>
+</head>
+<body>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="tog">Toggle</button>
+<br>
+<button id="tup">TogUp</button>
+<button id="tdouwn">TogDown</button>
+<button id="tslide">SlideToggle</button>
+<p> <img src="11.jpg"> </p>
+<br>
+<button>FadeIn</button>
+<button id="out">FadeOut</button>
+<button id="toggle">FadeToggle</button>
+<div id="01" style="width:80px;height:80px;display:none;background-color:red;border-radius:50%;"></div>
+<div id="02" style="width:80px;height:80px;display:none;background-color:Yellow;border-radius:50%;"></div>
+<div id="03" style="width:80px;height:80px;display:none;background-color:Black; border-radius:50%;"></div>
+</body>
+</html>
